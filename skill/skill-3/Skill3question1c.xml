@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="styles.css"?>
+<details>
+
+  <heading>Harry Porter</heading>
+
+  <wizardbank loc="amal">
+    <name>Albus Dumbledore</name>
+    <gender>Male</gender>
+    <address>The cupboard under the Stairs, 4, Privet Drive, Little Whinging, Surrey</address>
+    <waultno>1432</waultno>
+    <noofcoins>200</noofcoins>
+  </wizardbank>
+
+  <wizardbank loc="amal">
+    <name> Lord Voldemort</name>
+    <gender>Male</gender>
+    <address>The cupboard under the Stairs, 4, Privet Drive, Little Whinging, Surrey</address>
+    <waultno>1420</waultno>
+    <noofcoins>150</noofcoins>
+  </wizardbank>
+
+  <wizardbank loc="amal">
+    <name>Salazar Slytherin</name>
+    <gender>Male</gender>
+    <address>The cupboard under the Stairs, 4, Privet Drive, Little Whinging, Surrey</address>
+    <waultno>1425</waultno>
+    <noofcoins>120</noofcoins>
+  </wizardbank>
+
+  <wizardbank loc="amal">
+    <name>Severus Snape</name>
+    <gender>Male</gender>
+    <address>The cupboard under the Stairs, 4, Privet Drive, Little Whinging, Surrey</address>
+    <waultno>1769</waultno>
+    <noofcoins>180</noofcoins>
+  </wizardbank>
+
+  <wizardbank loc="amal">
+    <name>Credence Barebone</name>
+    <gender>Male</gender>
+    <address>The cupboard under the Stairs, 4, Privet Drive, Little Whinging, Surrey</address>
+    <waultno>1678</waultno>
+    <noofcoins>140</noofcoins>
+  </wizardbank>
+
+</details>

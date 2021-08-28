@@ -1,0 +1,69 @@
+heading
+{
+  margin-left: 500px;
+  color:black;
+  font-size: 40px;
+  font-weight:bold;
+}
+
+name
+{
+  margin-top:30px;
+  margin-left:200px;
+  font-size : 30px;
+  color:red;
+  font-weight:bold;
+  display:block;
+}
+
+wizardbank
+{
+  display:block;
+}
+
+gender
+{
+  display: block;
+  margin-left:250px;
+}
+
+address
+{
+  display: block;
+  margin-left:250px;
+}
+
+waultno
+{
+  display: block;
+  margin-left:250px;
+}
+noofcoins:before
+{
+  content:"No Of Coins: ";
+  font-size:20px;
+}
+
+waultno:before
+{
+  content:"Wault Number: ";
+  font-size:20px;
+}
+
+address:before
+{
+  content:"Address: ";
+  font-size:20px;
+}
+
+gender:before
+{
+  content:"gender: ";
+  font-size:20px;
+}
+
+noofcoins
+{
+  display:block;
+  margin-left:250px;
+}

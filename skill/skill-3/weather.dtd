@@ -1,0 +1,8 @@
+<!DOCTYPE weather
+[
+<!ELEMENT weather (day*)>
+<!ELEMENT day(place, date, report)>
+<!ELEMENT place (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT report (#PCDATA)>
+]>

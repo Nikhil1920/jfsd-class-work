@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE weatherreport[
+<!ELEMENT weatherreport (dailyreport)+>
+<!ELEMENT dailyreport (day?,date?,place?,temperature?,humidity?,wind_speed?,visibility?,pressure?,precip_type?,report?)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT place (#PCDATA)>
+<!ELEMENT temperature (#PCDATA)>
+<!ELEMENT humidity (#PCDATA)>
+<!ELEMENT wind_speed (#PCDATA)>
+<!ELEMENT visibility (#PCDATA)>
+<!ELEMENT pressure (#PCDATA)>
+<!ELEMENT precip_type (#PCDATA)>
+<!ELEMENT report (#PCDATA)>
+]>
+<weatherreport>
+  <dailyreport>
+     <day>monday</day>
+     <date>2001-12-03</date>
+     <place>vijayawada</place>
+     <temperature>9.472222222</temperature>
+     <humidity>0.89</humidity>
+     <wind_speed>14.117</wind_speed>
+     <visibility>15.8263</visibility>
+     <pressure>15.823</pressure>
+     <precip_type>rain</precip_type>
+     <report>partly cloudy throughout the day</report>
+   </dailyreport>
+   <dailyreport>
+     <day>tuesday</day>
+     <date>2001-12-04</date>
+     <place>vijayawada</place>
+     <temperature>9.355556</temperature>
+     <humidity>0.86</humidity>
+     <wind_speed>14.2646</wind_speed>
+     <visibility>15.8263</visibility>
+     <pressure>1015.13</pressure>
+     <precip_type>rain</precip_type>
+     <report>partly cloudy throughout the day</report>
+   </dailyreport>
+   <dailyreport>
+     <day>wednesday</day>
+     <date>2001-12-05</date>
+     <place>vijayawada</place>
+     <temperature>9.377778</temperature>
+     <humidity>0.89</humidity>
+     <wind_speed>3.9284</wind_speed>
+     <visibility>14.9569</visibility>
+     <pressure>1015.94</pressure>
+     <precip_type>rain</precip_type>
+    <report>partly cloudy throughout the day</report>
+   </dailyreport>
+   <dailyreport>
+     <day>thursday</day>
+     <date>2001-12-06</date>
+     <place>vijayawada</place>
+     <temperature>80.288889</temperature>
+     <humidity>0.83</humidity>
+     <wind_speed>14.1.36</wind_speed>
+     <visibility>15.8263</visibility>
+     <pressure>1016.41</pressure>
+     <precip_type>rain</precip_type>
+     <report>partly cloudy throughout the day</report>
+   </dailyreport>
+   <dailyreport>
+     <day>friday</day>
+     <date>2001-12-07</date>
+     <place>vijayawada</place>
+     <temperature>8.755556</temperature>
+     <humidity>0.83</humidity>
+     <wind_speed>11.0446</wind_speed>
+     <visibility>15.8263</visibility>
+     <pressure>1016.66</pressure>
+     <precip_type>rain</precip_type>
+     <report>partly cloudy throughout the day</report>
+   </dailyreport>
+   <dailyreport>
+     <day>saturday</day>
+     <date>2001-12-08</date>
+     <place>vijayawada</place>
+     <temperature>9.22222</temperature>
+     <humidity>0.85</humidity>
+     <wind_speed>13.9587</wind_speed>
+     <visibility>14.9569</visibility>
+     <pressure>1016.66</pressure>
+     <precip_type>sunny</precip_type>
+     <report>partly cloudy throughout the day</report>
+   </dailyreport>
+   <dailyreport>
+     <day>sunday</day>
+     <date>2001-12-09</date>
+     <place>vijayawada</place>
+     <temperature>7.33333</temperature>
+     <humidity>0.95</humidity>
+     <wind_speed>12.3648</wind_speed>
+     <visibility>9.982</visibility>
+     <pressure>1016.72</pressure>
+     <precip_type>rain</precip_type>
+     <report>partly cloudy throughout the day</report>
+   </dailyreport>
+</weatherreport>

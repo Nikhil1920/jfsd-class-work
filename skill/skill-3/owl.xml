@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diary>
+    <Monday Date="31" Month="july" year="1994">
+        <Name>Harry Potter</Name>
+        <Heading>My birthday</Heading>
+        <Body>Aunt Marge spoiled my day.</Body>
+    </Monday>
+    <!-- My notes -->
+</Diary>
