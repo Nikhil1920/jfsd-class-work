@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 public class RegisterDao {
 	public boolean register(String uname, String password, String role) {
 
-		String dbUserName = "root";
+		String dbUserName = "system";
 
 		String dbUserPassword = "nikhil4u";
 
