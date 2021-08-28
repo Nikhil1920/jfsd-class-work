@@ -14,6 +14,11 @@ import javax.servlet.http.HttpSession;
 @WebServlet("/LogoutServlet")
 public class LogoutServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	
+	public LogoutServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");  
