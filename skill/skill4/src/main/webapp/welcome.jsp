@@ -11,13 +11,13 @@
 
         <body>
 
-            <% response.setHeader("Cache-Control", "no-store, max-age=0" ); if(session.getAttribute("useremail")==null)
+            <% response.setHeader("Cache-Control", "no-store, max-age=0" ); if(session.getAttribute("username")==null)
                 { response.sendRedirect("index.html"); } %>
                 <h1>
                     Welcome
-                    <% if(session.getAttribute("useremail") !=null) { String
-                        useremail=session.getAttribute("useremail").toString(); LoginDao logindao=new LoginDao();
-                        out.print(logindao.getUserRole(useremail)); } %>
+                    <% if(session.getAttribute("username") !=null) { String
+                    	username=session.getAttribute("username").toString(); LoginDao logindao=new LoginDao();
+                        out.print(logindao.getUserRole(username)); } %>
                 </h1>
                 <br>
                 <h2>You have logged in successfully</h2>
