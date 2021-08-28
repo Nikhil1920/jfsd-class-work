@@ -7,7 +7,7 @@ class chooseSpecalizationSkill1 {
 
         String dbUserName = "system";
 
-        String dbUserPassword = "nikhil";
+        String dbUserPassword = "nikhil4u";
 
         Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", dbUserName, dbUserPassword);
 
