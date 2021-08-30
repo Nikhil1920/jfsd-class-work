@@ -21,9 +21,10 @@ public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	public LoginServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
@@ -42,9 +43,19 @@ public class LoginServlet extends HttpServlet {
 
 			LoginDao loginDao = new LoginDao();
 			if (loginDao.check(username, password)) {
+				String userRole = loginDao.getUserRole(username);
 				HttpSession session = request.getSession();
 				session.setAttribute("username", username);
-				response.sendRedirect("welcome.jsp");
+				if (userRole.equals("superadmin")) {
+					session.setAttribute("userrole", userRole);
+					response.sendRedirect("superAdmin.jsp");
+				} else if (userRole.equals("admin")) {
+					session.setAttribute("userrole", userRole);
+					response.sendRedirect("admin.jsp");
+				} else {
+					session.setAttribute("userrole", userRole);
+					response.sendRedirect("welcome.jsp");
+				}
 			} else {
 				out.print("Sorry, username or password error!");
 				RequestDispatcher rd = request.getRequestDispatcher("/index.html");
