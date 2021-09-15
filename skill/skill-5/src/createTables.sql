@@ -1,0 +1,1 @@
+CREATE TABLE skill5books(book_name VARCHAR(26) NOT NULL, author VARCHAR(26) NOT NULL, description VARCHAR(255) NOT NULL, price NUMBER, cover_image_url VARCHAR(255) NOT NULL, book_id NUMBER NOT NULL);
