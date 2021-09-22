@@ -34,25 +34,29 @@ public class skill6 {
 			int choice = sc.nextInt();
 
 			switch (choice) {
-			case 1:
-				System.out.println("Please enter employee id");
-				int employeeId = sc.nextInt();
-				get_employee_details(employeeId);
-				break;
+				case 1:
+					System.out.println("Please enter employee id");
+					int employeeId = sc.nextInt();
+					get_employee_details(employeeId);
+					break;
 
-			case 2:
-				System.out.println("Please enter employee id");
-				int employId = sc.nextInt();
-				update_employee_details(employId);
-				break;
+				case 2:
+					System.out.println("Please enter employee id");
+					int employId = sc.nextInt();
+					update_employee_details(employId);
+					break;
 
-			case 4:
-				exit = true;
-				break;
+				case 3:
+					delete_minimum_salary_employees();
+					break;
 
-			default:
-				System.out.println("Please Try Again");
-				break;
+				case 4:
+					exit = true;
+					break;
+
+				default:
+					System.out.println("Please Try Again");
+					break;
 			}
 		}
 		sc.close();
@@ -94,6 +98,22 @@ public class skill6 {
 					.setParameter("n", avg).setParameter("i", Empid).executeUpdate();
 
 			System.out.println(updatedEntities + " Entities updated succesfully");
+			tx.commit();
+		} catch (Exception e) {
+			System.out.println(e);
+			System.out.println("Something went wrong");
+		}
+	}
+
+	public static void delete_minimum_salary_employees() {
+		try (Session session = getSession()) {
+			List<Integer> minimum = session.createQuery("select min(salary) from Employee").getResultList();
+			Transaction tx = session.beginTransaction();
+			Integer min = minimum.get(0);
+			int updatedEntities = session.createQuery("delete from Employee e where e.salary=:i").setParameter("i", min)
+					.executeUpdate();
+
+			System.out.println(updatedEntities + " Entities deleted succesfully");
 			tx.commit();
 		} catch (Exception e) {
 			System.out.println(e);
